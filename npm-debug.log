@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish', './' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/home/desenvolvimento/JS/mongo',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /root/.npm/poc_mongo/1.0.0/package.tgz not in flight; packing
+9 info lifecycle poc_mongo@1.0.0~prepublish: poc_mongo@1.0.0
+10 silly lifecycle poc_mongo@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/root/.npm/poc_mongo/1.0.0/package.tgz',
+11 verbose tar pack   '/home/desenvolvimento/JS/mongo' ]
+12 verbose tarball /root/.npm/poc_mongo/1.0.0/package.tgz
+13 verbose folder /home/desenvolvimento/JS/mongo
+14 verbose addLocalTarball adding from inside cache /root/.npm/poc_mongo/1.0.0/package.tgz
+15 silly cache afterAdd poc_mongo@1.0.0
+16 verbose afterAdd /root/.npm/poc_mongo/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /root/.npm/poc_mongo/1.0.0/package/package.json written
+18 silly publish { name: 'poc_mongo',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'POC mongo with NodeJs https://www.w3schools.com/nodejs/nodejs_mongodb.asp',
+18 silly publish   main: 'CreateCollection.js',
+18 silly publish   dependencies:
+18 silly publish    { 'body-parser': '^1.17.2',
+18 silly publish      express: '^4.15.4',
+18 silly publish      mongodb: '^2.2.31' },
+18 silly publish   devDependencies: {},
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/henriquesm/NodesMongo.git' },
+18 silly publish   keywords: [ 'Node with Mongo' ],
+18 silly publish   author:
+18 silly publish    { name: 'Henrique Dos Santos Macedo',
+18 silly publish      email: 'henriques.m@hotmail.com',
+18 silly publish      url: 'https://github.com/henriquesm' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/henriquesm/NodesMongo/issues' },
+18 silly publish   homepage: 'https://github.com/henriquesm/NodesMongo#readme',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'poc_mongo@1.0.0',
+18 silly publish   _shasum: '31d13be73fd44545134221bafb3b7d8f7d136033',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name poc_mongo
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/poc_mongo
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /root/.npm/poc_mongo/1.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/poc_mongo
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 15:12:12
+29 verbose request using bearer token for auth
+30 verbose request id bad05be4a65d6c46
+31 http request PUT https://registry.npmjs.org/poc_mongo
+32 http 403 https://registry.npmjs.org/poc_mongo
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '104',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 22 Aug 2017 18:12:13 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-gig17026-GIG',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1503425533.976162,VS0,VE326',
+33 verbose headers   vary: 'Accept-Encoding, Accept' }
+34 verbose request invalidating /root/.npm/registry.npmjs.org/poc_mongo on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : poc_mongo
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid poc_mongo
+39 verbose cwd /home/desenvolvimento/JS/mongo
+40 error Linux 4.4.0-92-generic
+41 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish" "./"
+42 error node v4.2.6
+43 error npm  v3.5.2
+44 error code E403
+45 error you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : poc_mongo
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

@@ -1,0 +1,28 @@
+{
+  "name": "poc_mongo",
+  "version": "1.0.0",
+  "description": "POC mongo with NodeJs https://www.w3schools.com/nodejs/nodejs_mongodb.asp",
+  "main": "CreateCollection.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquesm/NodesMongo.git"
+  },
+  "keywords": [
+    "Node with Mongo"
+  ],
+  "author": "Henrique Dos Santos Macedo <henriques.m@hotmail.com> (https://github.com/henriquesm)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquesm/NodesMongo/issues"
+  },
+  "homepage": "https://github.com/henriquesm/NodesMongo#readme"
+}
